@@ -1,15 +1,81 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.c">
-        <link rel="stylesheet" href="https://rtbglitch.github.io/DVS-staticfiles/test.css">
-        <link rel="stylesheet" href="https://rtbglitch.github.io/DVS-staticfiles/test2.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <main class="bg-dark">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="display-4 text-light">Keeping Your Home Comfortable All Year Long</h1>
+                    <a href="{% url 'regester' %}" class="btn btn-custom ">Register</a>
+                </div>
+            </div>
+        </section>
+        <section class="features py-5 fs-4">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <p>Become The Developer You Always Wanted To Be</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Improve Your Problem Solving Skills</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Start Your Programming Career</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Always With You In Your Journey</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">What We Can Offer You</h2>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <div class="service-item">
+                            <h4>Programing-Tiers</h4>
+                            <ul class="fs-5">
+                                <li>Scratch</li>
+                                <li>Full Stack Web Development</li>
+                                <li>Python</li>
+                                <li>Data Base</li>
+                                <a href="{% url 'courses' %}" class="btn btn-custom">Learn more</a>
+                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="service-item">
+                            <h4>Creating Professional Websites</h4>
+                            <ul class="check-list fs-5">
+                                <li>
+                                    In short time
+                                </li>
+                                <li>
+                                    Websites That Fit For All Devices
+                                </li>
+                                <li>
+                                    The Best Prices In The Market
+                                </li>
+                                <a href="{% url 'makeprojects' %}" class="btn btn-custom">Request now</a>
+                
+                            </ul>
+                        </div>
+                    </div>
 
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>hi</h1>
-    </body>
-    </html>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
